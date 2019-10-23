@@ -1,0 +1,22 @@
+.example-card {
+  max-width: 400px;
+}
+
+.center {
+  display: flex;
+  height: 300px;
+  background-color: #ffffff;
+  justify-content: center;
+}
+
+.center mat-card {
+  align-self: center;
+}
+
+.container{
+  padding-left:100px;
+}
+
+.login-align{
+  margin-top:10%;
+}
