@@ -8,13 +8,23 @@ import { LoginComponent } from './login/login.component';
 import {MatCardModule} from "@angular/material/card";
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {FormsModule, ReactiveFormsModule} from "@angular/forms";
-import {MatFormFieldModule} from "@angular/material";
+import {
+  MatFormFieldModule,
+  MatInputModule,
+  MatPaginatorModule,
+  MatProgressSpinnerModule,
+  MatTableModule
+} from "@angular/material";
+import { ErrorComponent } from './error/error.component';
+import { ListTodosComponent } from './list-todos/list-todos.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     WelcomeComponent,
-    LoginComponent
+    LoginComponent,
+    ErrorComponent,
+    ListTodosComponent
   ],
   imports: [
     BrowserModule,
@@ -22,7 +32,12 @@ import {MatFormFieldModule} from "@angular/material";
     MatCardModule,
     BrowserAnimationsModule,
     ReactiveFormsModule,
-    MatFormFieldModule
+    MatFormFieldModule,
+    MatInputModule,
+    FormsModule,
+    MatProgressSpinnerModule,
+    MatTableModule,
+    MatPaginatorModule
   ],
   providers: [],
   bootstrap: [AppComponent]

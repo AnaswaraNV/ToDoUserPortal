@@ -1,18 +1,5 @@
-<!--<div class="center login-align">-->
-  <!--<mat-card class="example-card center">-->
-    <!--<mat-card-header>-->
-      <!--<div mat-card-avatar></div>-->
-      <!--<mat-card-title>SignIn</mat-card-title>-->
-      <!--&lt;!&ndash;<mat-card-subtitle>Dog Breed</mat-card-subtitle>&ndash;&gt;-->
-    <!--</mat-card-header>-->
-    <!--<mat-card-actions>-->
-      <!--<button mat-button>LIKE</button>-->
-      <!--<button mat-button>SHARE</button>-->
-    <!--</mat-card-actions>-->
-  <!--</mat-card>-->
-<!--</div>-->
 
-
+<div class="main-div">
 <mat-card class="example-card">
   <mat-card-header>
     <mat-card-title>Login</mat-card-title>
@@ -38,4 +25,9 @@
   <mat-card-actions>
     <button mat-raised-button (click)="login()" color="primary">Login</button>
   </mat-card-actions>
+  <div>
+    <mat-error *ngIf="invalidCredentials">{{invalidCredentialMessage}}</mat-error>
+  </div>
+
 </mat-card>
+</div>
