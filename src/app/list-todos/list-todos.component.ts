@@ -9,11 +9,11 @@ import {MatPaginator, MatTableDataSource} from "@angular/material";
 })
 export class ListTodosComponent implements OnInit {
 
-  displayedColumns: string[] = ['id', 'description'];
+  displayedColumns: string[] = ['id', 'date' , 'description', 'isCompleted'];
 
   private todoList = [
-    {id : '1', description : 'Learn Canvas Painting'},
-    {id : '2', description : 'Be an expert in Java 8'}
+    {id : '1', description : 'Learn Canvas Painting', date: new Date(), isCompleted: true},
+    {id : '2', description : 'Be an expert in Java 8', date: new Date(), isCompleted: false}
   ];
 
 

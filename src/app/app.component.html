@@ -1,291 +1,191 @@
 
-<style>
-  :host {
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-    font-size: 14px;
-    color: #333;
-    box-sizing: border-box;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-  }
+<app-menu></app-menu>
+<!--&lt;!&ndash; Masthead &ndash;&gt;-->
+<!--<header class="masthead">-->
+  <!--<div class="container h-100">-->
+    <!--<div class="row h-100 align-items-center justify-content-center text-center">-->
+      <!--<div class="col-lg-10 align-self-end">-->
+        <!--<h1 class="text-uppercase text-white font-weight-bold">Your Favorite Source of Free Bootstrap Themes</h1>-->
+        <!--<hr class="divider my-4">-->
+      <!--</div>-->
+      <!--<div class="col-lg-8 align-self-baseline">-->
+        <!--<p class="text-white-75 font-weight-light mb-5">Start Bootstrap can help you build better websites using the Bootstrap framework! Just download a theme and start customizing, no strings attached!</p>-->
+        <!--<a class="btn btn-primary btn-xl js-scroll-trigger" href="#about">Find Out More</a>-->
+      <!--</div>-->
+    <!--</div>-->
+  <!--</div>-->
+<!--</header>-->
 
-  h1,
-  h2,
-  h3,
-  h4,
-  h5,
-  h6 {
-    margin: 8px 0;
-  }
+<!--&lt;!&ndash; About Section &ndash;&gt;-->
+<!--<section class="page-section bg-primary" id="about">-->
+  <!--<div class="container">-->
+    <!--<div class="row justify-content-center">-->
+      <!--<div class="col-lg-8 text-center">-->
+        <!--<h2 class="text-white mt-0">We've got what you need!</h2>-->
+        <!--<hr class="divider light my-4">-->
+        <!--<p class="text-white-50 mb-4">Start Bootstrap has everything you need to get your new website up and running in no time! Choose one of our open source, free to download, and easy to use themes! No strings attached!</p>-->
+        <!--<a class="btn btn-light btn-xl js-scroll-trigger" href="#services">Get Started!</a>-->
+      <!--</div>-->
+    <!--</div>-->
+  <!--</div>-->
+<!--</section>-->
 
-  p {
-    margin: 0;
-  }
+<!--&lt;!&ndash; Services Section &ndash;&gt;-->
+<!--<section class="page-section" id="services">-->
+  <!--<div class="container">-->
+    <!--<h2 class="text-center mt-0">At Your Service</h2>-->
+    <!--<hr class="divider my-4">-->
+    <!--<div class="row">-->
+      <!--<div class="col-lg-3 col-md-6 text-center">-->
+        <!--<div class="mt-5">-->
+          <!--<i class="fas fa-4x fa-gem text-primary mb-4"></i>-->
+          <!--<h3 class="h4 mb-2">Sturdy Themes</h3>-->
+          <!--<p class="text-muted mb-0">Our themes are updated regularly to keep them bug free!</p>-->
+        <!--</div>-->
+      <!--</div>-->
+      <!--<div class="col-lg-3 col-md-6 text-center">-->
+        <!--<div class="mt-5">-->
+          <!--<i class="fas fa-4x fa-laptop-code text-primary mb-4"></i>-->
+          <!--<h3 class="h4 mb-2">Up to Date</h3>-->
+          <!--<p class="text-muted mb-0">All dependencies are kept current to keep things fresh.</p>-->
+        <!--</div>-->
+      <!--</div>-->
+      <!--<div class="col-lg-3 col-md-6 text-center">-->
+        <!--<div class="mt-5">-->
+          <!--<i class="fas fa-4x fa-globe text-primary mb-4"></i>-->
+          <!--<h3 class="h4 mb-2">Ready to Publish</h3>-->
+          <!--<p class="text-muted mb-0">You can use this design as is, or you can make changes!</p>-->
+        <!--</div>-->
+      <!--</div>-->
+      <!--<div class="col-lg-3 col-md-6 text-center">-->
+        <!--<div class="mt-5">-->
+          <!--<i class="fas fa-4x fa-heart text-primary mb-4"></i>-->
+          <!--<h3 class="h4 mb-2">Made with Love</h3>-->
+          <!--<p class="text-muted mb-0">Is it really open source if it's not made with love?</p>-->
+        <!--</div>-->
+      <!--</div>-->
+    <!--</div>-->
+  <!--</div>-->
+<!--</section>-->
 
-  .spacer {
-    flex: 1;
-  }
+<!--&lt;!&ndash; Portfolio Section &ndash;&gt;-->
+<!--<section id="portfolio">-->
+  <!--<div class="container-fluid p-0">-->
+    <!--<div class="row no-gutters">-->
+      <!--<div class="col-lg-4 col-sm-6">-->
+        <!--<a class="portfolio-box" href="img/portfolio/fullsize/1.jpg">-->
+          <!--<img class="img-fluid" src="img/portfolio/thumbnails/1.jpg" alt="">-->
+          <!--<div class="portfolio-box-caption">-->
+            <!--<div class="project-category text-white-50">-->
+              <!--Category-->
+            <!--</div>-->
+            <!--<div class="project-name">-->
+              <!--Project Name-->
+            <!--</div>-->
+          <!--</div>-->
+        <!--</a>-->
+      <!--</div>-->
+      <!--<div class="col-lg-4 col-sm-6">-->
+        <!--<a class="portfolio-box" href="img/portfolio/fullsize/2.jpg">-->
+          <!--<img class="img-fluid" src="img/portfolio/thumbnails/2.jpg" alt="">-->
+          <!--<div class="portfolio-box-caption">-->
+            <!--<div class="project-category text-white-50">-->
+              <!--Category-->
+            <!--</div>-->
+            <!--<div class="project-name">-->
+              <!--Project Name-->
+            <!--</div>-->
+          <!--</div>-->
+        <!--</a>-->
+      <!--</div>-->
+      <!--<div class="col-lg-4 col-sm-6">-->
+        <!--<a class="portfolio-box" href="img/portfolio/fullsize/3.jpg">-->
+          <!--<img class="img-fluid" src="img/portfolio/thumbnails/3.jpg" alt="">-->
+          <!--<div class="portfolio-box-caption">-->
+            <!--<div class="project-category text-white-50">-->
+              <!--Category-->
+            <!--</div>-->
+            <!--<div class="project-name">-->
+              <!--Project Name-->
+            <!--</div>-->
+          <!--</div>-->
+        <!--</a>-->
+      <!--</div>-->
+      <!--<div class="col-lg-4 col-sm-6">-->
+        <!--<a class="portfolio-box" href="img/portfolio/fullsize/4.jpg">-->
+          <!--<img class="img-fluid" src="img/portfolio/thumbnails/4.jpg" alt="">-->
+          <!--<div class="portfolio-box-caption">-->
+            <!--<div class="project-category text-white-50">-->
+              <!--Category-->
+            <!--</div>-->
+            <!--<div class="project-name">-->
+              <!--Project Name-->
+            <!--</div>-->
+          <!--</div>-->
+        <!--</a>-->
+      <!--</div>-->
+      <!--<div class="col-lg-4 col-sm-6">-->
+        <!--<a class="portfolio-box" href="img/portfolio/fullsize/5.jpg">-->
+          <!--<img class="img-fluid" src="img/portfolio/thumbnails/5.jpg" alt="">-->
+          <!--<div class="portfolio-box-caption">-->
+            <!--<div class="project-category text-white-50">-->
+              <!--Category-->
+            <!--</div>-->
+            <!--<div class="project-name">-->
+              <!--Project Name-->
+            <!--</div>-->
+          <!--</div>-->
+        <!--</a>-->
+      <!--</div>-->
+      <!--<div class="col-lg-4 col-sm-6">-->
+        <!--<a class="portfolio-box" href="img/portfolio/fullsize/6.jpg">-->
+          <!--<img class="img-fluid" src="img/portfolio/thumbnails/6.jpg" alt="">-->
+          <!--<div class="portfolio-box-caption p-3">-->
+            <!--<div class="project-category text-white-50">-->
+              <!--Category-->
+            <!--</div>-->
+            <!--<div class="project-name">-->
+              <!--Project Name-->
+            <!--</div>-->
+          <!--</div>-->
+        <!--</a>-->
+      <!--</div>-->
+    <!--</div>-->
+  <!--</div>-->
+<!--</section>-->
 
-  .toolbar {
-    height: 60px;
-    margin: -8px;
-    display: flex;
-    align-items: center;
-    background-color: #1976d2;
-    color: white;
-    font-weight: 600;
-  }
+<!--&lt;!&ndash; Call to Action Section &ndash;&gt;-->
+<!--<section class="page-section bg-dark text-white">-->
+  <!--<div class="container text-center">-->
+    <!--<h2 class="mb-4">Free Download at Start Bootstrap!</h2>-->
+    <!--<a class="btn btn-light btn-xl" href="https://startbootstrap.com/themes/creative/">Download Now!</a>-->
+  <!--</div>-->
+<!--</section>-->
 
-  .toolbar img {
-    margin: 0 16px;
-  }
-
-  .toolbar #twitter-logo {
-    height: 40px;
-    margin: 0 16px;
-  }
-
-  .toolbar #twitter-logo:hover {
-    opacity: 0.8;
-  }
-
-  .content {
-    display: flex;
-    margin: 32px auto;
-    padding: 0 16px;
-    max-width: 960px;
-    flex-direction: column;
-    align-items: center;
-  }
-
-  svg.material-icons {
-    height: 24px;
-    width: auto;
-  }
-
-  svg.material-icons:not(:last-child) {
-    margin-right: 8px;
-  }
-
-  .card svg.material-icons path {
-    fill: #888;
-  }
-
-  .card-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    margin-top: 16px;
-  }
-
-  .card {
-    border-radius: 4px;
-    border: 1px solid #eee;
-    background-color: #fafafa;
-    height: 40px;
-    width: 200px;
-    margin: 0 8px 16px;
-    padding: 16px;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    transition: all 0.2s ease-in-out;
-    line-height: 24px;
-  }
-
-  .card-container .card:not(:last-child) {
-    margin-right: 0;
-  }
-
-  .card.card-small {
-    height: 16px;
-    width: 168px;
-  }
-
-  .card-container .card:not(.highlight-card) {
-    cursor: pointer;
-  }
-
-  .card-container .card:not(.highlight-card):hover {
-    transform: translateY(-3px);
-    box-shadow: 0 4px 17px rgba(black, 0.35);
-  }
-
-  .card-container .card:not(.highlight-card):hover .material-icons path {
-    fill: rgb(105, 103, 103);
-  }
-
-  .card.highlight-card {
-    background-color: #1976d2;
-    color: white;
-    font-weight: 600;
-    border: none;
-    width: auto;
-    min-width: 30%;
-    position: relative;
-  }
-
-  .card.card.highlight-card span {
-    margin-left: 60px;
-  }
-
-  svg#rocket {
-    width: 80px;
-    position: absolute;
-    left: -10px;
-    top: -24px;
-  }
-
-  svg#rocket-smoke {
-    height: 100vh;
-    position: absolute;
-    top: 10px;
-    right: 180px;
-    z-index: -10;
-  }
-
-  a,
-  a:visited,
-  a:hover {
-    color: #1976d2;
-    text-decoration: none;
-  }
-
-  a:hover {
-    color: #125699;
-  }
-
-  .terminal {
-    position: relative;
-    width: 80%;
-    max-width: 600px;
-    border-radius: 6px;
-    padding-top: 45px;
-    margin-top: 8px;
-    overflow: hidden;
-    background-color: rgb(15, 15, 16);
-  }
-
-  .terminal::before {
-    content: "\2022 \2022 \2022";
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 4px;
-    background: rgb(58, 58, 58);
-    color: #c2c3c4;
-    width: 100%;
-    font-size: 2rem;
-    line-height: 0;
-    padding: 14px 0;
-    text-indent: 4px;
-  }
-
-  .terminal pre {
-    font-family: SFMono-Regular,Consolas,Liberation Mono,Menlo,monospace;
-    color: white;
-    padding: 0 1rem 1rem;
-    margin: 0;
-  }
-
-  .circle-link {
-    height: 40px;
-    width: 40px;
-    border-radius: 40px;
-    margin: 8px;
-    background-color: white;
-    border: 1px solid #eeeeee;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    cursor: pointer;
-    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
-    transition: 1s ease-out;
-  }
-
-  .circle-link:hover {
-    transform: translateY(-0.25rem);
-    box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.2);
-  }
-
-  footer {
-    margin-top: 8px;
-    display: flex;
-    align-items: center;
-    line-height: 20px;
-  }
-
-  footer a {
-    display: flex;
-    align-items: center;
-  }
-
-  .github-star-badge {
-    color: #24292e;
-    display: flex;
-    align-items: center;
-    font-size: 12px;
-    padding: 3px 10px;
-    border: 1px solid rgba(27,31,35,.2);
-    border-radius: 3px;
-    background-image: linear-gradient(-180deg,#fafbfc,#eff3f6 90%);
-    margin-left: 4px;
-    font-weight: 600;
-    font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol;
-  }
-
-  .github-star-badge:hover {
-    background-image: linear-gradient(-180deg,#f0f3f6,#e6ebf1 90%);
-    border-color: rgba(27,31,35,.35);
-    background-position: -.5em;
-  }
-
-  .github-star-badge .material-icons {
-    height: 16px;
-    width: 16px;
-    margin-right: 4px;
-  }
-
-  svg#clouds {
-    position: fixed;
-    bottom: -160px;
-    left: -230px;
-    z-index: -10;
-    width: 1920px;
-  }
-
-
-  /* Responsive Styles */
-  @media screen and (max-width: 767px) {
-
-    .card-container > *:not(.circle-link) ,
-    .terminal {
-      width: 100%;
-    }
-
-    .card:not(.highlight-card) {
-      height: 16px;
-      margin: 8px 0;
-    }
-
-    .card.highlight-card span {
-      margin-left: 72px;
-    }
-
-    svg#rocket-smoke {
-      right: 120px;
-      transform: rotate(-5deg);
-    }
-  }
-
-  @media screen and (max-width: 575px) {
-    svg#rocket-smoke {
-      display: none;
-      visibility: hidden;
-    }
-  }
-</style>
-
+<!--&lt;!&ndash; Contact Section &ndash;&gt;-->
+<!--<section class="page-section" id="contact">-->
+  <!--<div class="container">-->
+    <!--<div class="row justify-content-center">-->
+      <!--<div class="col-lg-8 text-center">-->
+        <!--<h2 class="mt-0">Let's Get In Touch!</h2>-->
+        <!--<hr class="divider my-4">-->
+        <!--<p class="text-muted mb-5">Ready to start your next project with us? Give us a call or send us an email and we will get back to you as soon as possible!</p>-->
+      <!--</div>-->
+    <!--</div>-->
+    <!--<div class="row">-->
+      <!--<div class="col-lg-4 ml-auto text-center mb-5 mb-lg-0">-->
+        <!--<i class="fas fa-phone fa-3x mb-3 text-muted"></i>-->
+        <!--<div>+1 (202) 555-0149</div>-->
+      <!--</div>-->
+      <!--<div class="col-lg-4 mr-auto text-center">-->
+        <!--<i class="fas fa-envelope fa-3x mb-3 text-muted"></i>-->
+        <!--&lt;!&ndash; Make sure to change the email address in anchor text AND the link below! &ndash;&gt;-->
+        <!--<a class="d-block" href="mailto:contact@yourwebsite.com">contact@yourwebsite.com</a>-->
+      <!--</div>-->
+    <!--</div>-->
+  <!--</div>-->
+<!--</section>-->
 
 <router-outlet></router-outlet>
+
+<app-footer></app-footer>
