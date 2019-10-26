@@ -1,4 +1,13 @@
-<p>welcome To Do Application!</p>
+<div class="container">
+click here to get customized welcome message
+  <button class="btn btn-success" (click) = "generateWelcomeMessage()">
+    generate welcome message
+  </button>
+  <div *ngIf="message">
+    {{message}}
+  </div>
+</div>
+
 <div>
   Access your <a routerLink="/todos"> todos </a> here.
 </div>
