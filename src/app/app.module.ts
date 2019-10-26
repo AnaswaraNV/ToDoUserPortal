@@ -20,6 +20,7 @@ import { ListTodosComponent } from './list-todos/list-todos.component';
 import { MenuComponent } from './menu/menu.component';
 import { FooterComponent } from './footer/footer.component';
 import {HttpClientModule} from "@angular/common/http";
+import { LogoutComponent } from './logout/logout.component';
 
 @NgModule({
   declarations: [
@@ -30,6 +31,7 @@ import {HttpClientModule} from "@angular/common/http";
     ListTodosComponent,
     MenuComponent,
     FooterComponent,
+    LogoutComponent,
   ],
   imports: [
     BrowserModule,
