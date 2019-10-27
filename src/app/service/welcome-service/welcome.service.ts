@@ -13,14 +13,14 @@ export class WelcomeService {
 
 getWelcomeMessage(username: string) : Observable<any> {
 
-    let basicAuthentication = this.createBasicAuthenticationHeaders();
-    let headerOptions = new HttpHeaders({
-      'Authorization': basicAuthentication
-    })
+    // let basicAuthentication = this.createBasicAuthenticationHeaders();
+    // let headerOptions = new HttpHeaders({
+    //   'Authorization': basicAuthentication
+    // })
 
 
    //when we get result , what should we do.
-  return this.http.get(environment.apiUrl +  'welcome/' + username, {headers: headerOptions, responseType: 'text'});
+  return this.http.get(environment.apiUrl +  'welcome/' + username, {responseType: 'text'});
 //
 // .pipe(map( data => {
 //

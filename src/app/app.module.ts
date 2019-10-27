@@ -19,8 +19,9 @@ import { ErrorComponent } from './error/error.component';
 import { ListTodosComponent } from './list-todos/list-todos.component';
 import { MenuComponent } from './menu/menu.component';
 import { FooterComponent } from './footer/footer.component';
-import {HttpClientModule} from "@angular/common/http";
+import {HTTP_INTERCEPTORS, HttpClientModule} from "@angular/common/http";
 import { LogoutComponent } from './logout/logout.component';
+import {HttpInterceptorService} from "./service/http/http-interceptor.service";
 
 @NgModule({
   declarations: [
@@ -47,7 +48,9 @@ import { LogoutComponent } from './logout/logout.component';
     MatPaginatorModule,
     HttpClientModule
   ],
-  providers: [],
+  providers: [{
+    provide: HTTP_INTERCEPTORS, useClass : HttpInterceptorService , multi : true
+  }],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
