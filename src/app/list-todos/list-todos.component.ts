@@ -10,12 +10,8 @@ import {TodoService} from "../service/todo-service/todo.service";
 })
 export class ListTodosComponent implements OnInit {
 
-  displayedColumns: string[] = ['id', 'date' , 'description', 'isCompleted'];
+  displayedColumns: string[] = ['id', 'Created Date' , 'Description', 'Completed', 'Username'];
 
-  // private todoList = [
-  //   {id : '1', description : 'Learn Canvas Painting', date: new Date(), isCompleted: true},
-  //   {id : '2', description : 'Be an expert in Java 8', date: new Date(), isCompleted: false}
-  // ];
   private todoList: Array<Todo> = [];
   private username: string = '';
   private dataSource: MatTableDataSource<Todo>;
@@ -26,11 +22,14 @@ export class ListTodosComponent implements OnInit {
 
   ngOnInit() {
 
-    this.todoService.fetchTodos(this.username).subscribe((data) =>
-    {
-      this.todoList = data;
-      this.dataSource = new MatTableDataSource<Todo>(this.todoList);
-    });
+    // this.todoService.fetchTodos(this.username).subscribe((data) =>
+    // {
+    //   this.todoList = data;
+    //   this.dataSource = new MatTableDataSource<Todo>(this.todoList);
+    // });
+
+    this.todoList = this.todoService.todoList;
+    this.dataSource = new MatTableDataSource<Todo>(this.todoList);
 
     this.dataSource.paginator = this.paginator;
   }

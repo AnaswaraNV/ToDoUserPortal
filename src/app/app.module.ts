@@ -22,6 +22,7 @@ import { FooterComponent } from './footer/footer.component';
 import {HTTP_INTERCEPTORS, HttpClientModule} from "@angular/common/http";
 import { LogoutComponent } from './logout/logout.component';
 import {HttpInterceptorService} from "./service/http/http-interceptor.service";
+import { AddTodoComponent } from './add-todo/add-todo.component';
 
 @NgModule({
   declarations: [
@@ -33,6 +34,7 @@ import {HttpInterceptorService} from "./service/http/http-interceptor.service";
     MenuComponent,
     FooterComponent,
     LogoutComponent,
+    AddTodoComponent,
   ],
   imports: [
     BrowserModule,
@@ -48,9 +50,11 @@ import {HttpInterceptorService} from "./service/http/http-interceptor.service";
     MatPaginatorModule,
     HttpClientModule
   ],
-  providers: [{
-    provide: HTTP_INTERCEPTORS, useClass : HttpInterceptorService , multi : true
-  }],
+  providers: [
+    // {
+    // provide: HTTP_INTERCEPTORS, useClass : HttpInterceptorService , multi : true
+    // }
+    ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
