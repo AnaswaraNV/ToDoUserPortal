@@ -9,8 +9,9 @@ import {MatCardModule} from "@angular/material/card";
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {FormsModule, ReactiveFormsModule} from "@angular/forms";
 import {
-  MatFormFieldModule,
-  MatInputModule,
+  MatDatepickerModule,
+  MatFormFieldModule, MatIconModule,
+  MatInputModule, MatNativeDateModule,
   MatPaginatorModule,
   MatProgressSpinnerModule,
   MatTableModule
@@ -48,7 +49,10 @@ import { AddTodoComponent } from './add-todo/add-todo.component';
     MatProgressSpinnerModule,
     MatTableModule,
     MatPaginatorModule,
-    HttpClientModule
+    HttpClientModule,
+    MatDatepickerModule,
+    MatIconModule,
+    MatNativeDateModule,
   ],
   providers: [
     // {
