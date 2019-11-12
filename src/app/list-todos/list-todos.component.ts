@@ -22,14 +22,14 @@ export class ListTodosComponent implements OnInit {
 
   ngOnInit() {
 
-    // this.todoService.fetchTodos(this.username).subscribe((data) =>
-    // {
-    //   this.todoList = data;
-    //   this.dataSource = new MatTableDataSource<Todo>(this.todoList);
-    // });
+    this.todoService.fetchTodos(this.username).subscribe((data) =>
+    {
+      this.todoList = data;
+      this.dataSource = new MatTableDataSource<Todo>(this.todoList);
+    });
 
-    this.todoList = this.todoService.todoList;
-    this.dataSource = new MatTableDataSource<Todo>(this.todoList);
+    // this.todoList = this.todoService.todoList;
+    // this.dataSource = new MatTableDataSource<Todo>(this.todoList);
 
     this.dataSource.paginator = this.paginator;
   }

@@ -1,7 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import {TodoService} from "../service/todo-service/todo.service";
 import {Todo} from "../model/todo";
-import {HardcodedAuthenticationService} from "../service/hardcoded-authentication/hardcoded-authentication.service";
 import {MatDatepickerInputEvent} from "@angular/material";
 import {FormBuilder, FormControl, FormGroup} from "@angular/forms";
 
@@ -20,7 +19,7 @@ export class AddTodoComponent implements OnInit {
   private checkoutForm: FormGroup;
   successMsg:boolean;
   
-  constructor(private todoService: TodoService, private hardCodedAuthentication: HardcodedAuthenticationService) { }
+  constructor(private todoService: TodoService) { }
 
   ngOnInit() {
     this.todoList = this.todoService.todoList;
@@ -31,7 +30,6 @@ export class AddTodoComponent implements OnInit {
       createdDate: new FormControl('')
     });
 
-    console.log(this.hardCodedAuthentication.username());
   }
 
   addEvent(change: string, $event: MatDatepickerInputEvent<Date>) {

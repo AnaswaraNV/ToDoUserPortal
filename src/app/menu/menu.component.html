@@ -5,13 +5,13 @@
     </div>
     <div class="collapse navbar-collapse" id="navbarText">
       <ul class="navbar-nav mr-auto">
-        <li *ngIf="hardcodedAuthenticationService.isUserLoggedIn()" class="nav-item active">
+        <li *ngIf="basicAuthService.isUserLoggedIn()" class="nav-item active">
           <a class="nav-link" routerLink="/login">Home <span class="sr-only">(current)</span></a>
         </li>
         <!--<li class="nav-item" *ngIf="hardcodedAuthenticationService.isUserLoggedIn()">-->
           <!--<a class="nav-link" routerLink="/todos">ToDos</a>-->
         <!--</li>-->
-        <li class="nav-item dropdown"  *ngIf="hardcodedAuthenticationService.isUserLoggedIn()">
+        <li class="nav-item dropdown"  *ngIf="basicAuthService.isUserLoggedIn()">
           <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown"
              role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
             ToDos
@@ -20,16 +20,16 @@
             <a class="dropdown-item" routerLink="/todos">View ToDos</a>
             <a class="dropdown-item" routerLink="/add-todo">Add</a>
             <div class="dropdown-divider"></div>
-            <a class="dropdown-item" routerLink="#">Delete</a>
+            <a class="dropdown-item" routerLink="/delete-todo">Delete</a>
           </div>
         </li>
       </ul>
 
       <ul class="navbar-nav navbar-collapse justify-content-end">
-        <li *ngIf="hardcodedAuthenticationService.isUserLoggedIn() === false">
+        <li *ngIf="basicAuthService.isUserLoggedIn() === false">
           <a routerLink="/login" class="nav-link"> Login</a>
         </li>
-        <li *ngIf="hardcodedAuthenticationService.isUserLoggedIn()">
+        <li *ngIf="basicAuthService.isUserLoggedIn()">
           <a routerLink="/logout" class="nav-link"> Logout</a>
         </li>
       </ul>

@@ -9,6 +9,7 @@ import {MatCardModule} from "@angular/material/card";
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {FormsModule, ReactiveFormsModule} from "@angular/forms";
 import {
+  MatButtonModule,
   MatDatepickerModule,
   MatFormFieldModule, MatIconModule,
   MatInputModule, MatNativeDateModule,
@@ -24,6 +25,7 @@ import {HTTP_INTERCEPTORS, HttpClientModule} from "@angular/common/http";
 import { LogoutComponent } from './logout/logout.component';
 import {HttpInterceptorService} from "./service/http/http-interceptor.service";
 import { AddTodoComponent } from './add-todo/add-todo.component';
+import { DeleteTodoComponent } from './delete-todo/delete-todo.component';
 
 @NgModule({
   declarations: [
@@ -36,6 +38,7 @@ import { AddTodoComponent } from './add-todo/add-todo.component';
     FooterComponent,
     LogoutComponent,
     AddTodoComponent,
+    DeleteTodoComponent,
   ],
   imports: [
     BrowserModule,
@@ -55,9 +58,9 @@ import { AddTodoComponent } from './add-todo/add-todo.component';
     MatNativeDateModule,
   ],
   providers: [
-    // {
-    // provide: HTTP_INTERCEPTORS, useClass : HttpInterceptorService , multi : true
-    // }
+    {
+    provide: HTTP_INTERCEPTORS, useClass : HttpInterceptorService , multi : true
+    }
     ],
   bootstrap: [AppComponent]
 })
