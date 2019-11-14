@@ -10,7 +10,7 @@ import {TodoService} from "../service/todo-service/todo.service";
 })
 export class ListTodosComponent implements OnInit {
 
-  displayedColumns: string[] = ['id', 'Created Date' , 'Description', 'Completed', 'Username'];
+  displayedColumns: string[] = ['id', 'Created Date' , 'Description', 'Completed', 'Username', 'actions'];
 
   private todoList: Array<Todo> = [];
   private username: string = '';

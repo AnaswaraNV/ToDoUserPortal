@@ -41,7 +41,7 @@ export class BasicAuthenticationService {
     })
 
     return this.http.get<AuthenticationBean>(environment.apiUrl +  'basicauth',
-      // {headers: headers}
+      {headers: headers}
       )
       .pipe(
         map(data=> {

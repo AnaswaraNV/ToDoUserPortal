@@ -1,0 +1,9 @@
+$footer-background-color: #8dc5ff;
+
+:host{
+  display: block;
+  background-color: $footer-background-color;
+  bottom: 0;
+  width: 100%;
+  position: fixed;
+}
