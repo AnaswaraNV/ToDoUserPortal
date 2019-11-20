@@ -35,7 +35,7 @@
       <ng-container matColumnDef="actions">
         <th mat-header-cell *matHeaderCellDef> Actions </th>
         <td mat-cell *matCellDef="let row" >
-          <button md-raised-button >Edit</button>
+          <button md-raised-button (click)="updateToDo(row.id)" >Update</button>
         </td>
       </ng-container>
 

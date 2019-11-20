@@ -26,6 +26,7 @@ import { LogoutComponent } from './logout/logout.component';
 import {HttpInterceptorService} from "./service/http/http-interceptor.service";
 import { AddTodoComponent } from './add-todo/add-todo.component';
 import { DeleteTodoComponent } from './delete-todo/delete-todo.component';
+import { UpdateTodoComponent } from './update-todo/update-todo.component';
 
 @NgModule({
   declarations: [
@@ -39,6 +40,7 @@ import { DeleteTodoComponent } from './delete-todo/delete-todo.component';
     LogoutComponent,
     AddTodoComponent,
     DeleteTodoComponent,
+    UpdateTodoComponent,
   ],
   imports: [
     BrowserModule,

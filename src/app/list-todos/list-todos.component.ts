@@ -2,6 +2,8 @@ import {Component, OnInit, ViewChild} from '@angular/core';
 import {Todo} from "../model/todo";
 import {MatPaginator, MatTableDataSource} from "@angular/material";
 import {TodoService} from "../service/todo-service/todo.service";
+import {Router} from "@angular/router";
+import {environment} from "../../environments/environment";
 
 @Component({
   selector: 'app-list-todos',
@@ -17,7 +19,7 @@ export class ListTodosComponent implements OnInit {
   private dataSource: MatTableDataSource<Todo>;
 
   @ViewChild(MatPaginator, {static: true}) paginator: MatPaginator;
-  constructor(private todoService: TodoService) {
+  constructor(private todoService: TodoService, private router: Router) {
   }
 
   ngOnInit() {
@@ -34,4 +36,8 @@ export class ListTodosComponent implements OnInit {
     this.dataSource.paginator = this.paginator;
   }
 
+  updateToDo(id: string) {
+    console.log('selected todo id '+ id);
+    this.router.navigateByUrl(environment.apiUrl +  'update-todo/' + id);
+  }
 }
