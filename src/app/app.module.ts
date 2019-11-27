@@ -27,6 +27,7 @@ import {HttpInterceptorService} from "./service/http/http-interceptor.service";
 import { AddTodoComponent } from './add-todo/add-todo.component';
 import { DeleteTodoComponent } from './delete-todo/delete-todo.component';
 import { UpdateTodoComponent } from './update-todo/update-todo.component';
+import {SidebarModule} from "ng-sidebar";
 
 @NgModule({
   declarations: [
@@ -58,6 +59,7 @@ import { UpdateTodoComponent } from './update-todo/update-todo.component';
     MatDatepickerModule,
     MatIconModule,
     MatNativeDateModule,
+    SidebarModule.forRoot()
   ],
   providers: [
     {

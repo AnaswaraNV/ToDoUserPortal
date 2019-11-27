@@ -5,15 +5,19 @@ import {BasicAuthenticationService} from "../service/basic-authentication/basic-
 @Component({
   selector: 'app-menu',
   templateUrl: './menu.component.html',
-  styleUrls: ['./menu.component.css']
+  styleUrls: ['./menu.component.scss']
 })
 export class MenuComponent implements OnInit {
 
   // isUSerLoggerdIn: boolean = false;
+  isToggle: boolean = false;
   constructor(private basicAuthService: BasicAuthenticationService) { }
 
   ngOnInit() {
     // this.isUSerLoggerdIn = this.hardcoddedAuthenticationService.isUserLoggedIn();
   }
 
+  toggle() {
+    this.isToggle = true;
+  }
 }
